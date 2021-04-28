@@ -1,0 +1,13 @@
+{
+  "name": "mud_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bench.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bench": "nodemon bench.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
