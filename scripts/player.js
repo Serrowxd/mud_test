@@ -6,6 +6,8 @@
 // const User = require("./usertemp.json");
 // const Items = require("./items.json");
 
+// HTML Definitions
+
 // Define the player constructor via the template
 class Player {
   constructor(username, level, inventory) {
@@ -27,7 +29,7 @@ class Item {
 }
 
 // Define the base player
-const player = new Player("Kevin", 1, []);
+const player = new Player("Serrow", 1, []);
 
 // Define an item
 const pickaxe = new Item(0, "Pickaxe", false, 1);
@@ -126,5 +128,5 @@ const startServer = function () {
   console.log(player.inventory);
 };
 
-const e = "none";
-console.log(startServer());
+// const e = "none";
+// console.log(startServer());
