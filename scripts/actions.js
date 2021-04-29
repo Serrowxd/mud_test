@@ -54,9 +54,12 @@ function PlayerMine(user, item) {
       CreateNode(`Item added: ${item.name}`, cons);
       // CreateNode(`Iron Ore: ${user.inventory[is].count}`, cons);
       ore.textContent = `Ore: ${player.inventory[is].count}`;
+
+      CreateInventoryItem(iron_ore.name);
     } else {
       GivePlayerItem(user, item);
       CreateNode(`New item added: ${item.name}`, cons);
+      CreateInventoryItem(iron_ore.name);
       ore.textContent = `Ore: 1`;
     }
   }

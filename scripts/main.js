@@ -3,6 +3,7 @@ const level = document.getElementById("level");
 const mine = document.getElementById("mine");
 const cons = document.getElementById("console");
 const ore = document.getElementById("ore");
+const inventory = document.getElementById("inventory");
 
 window.addEventListener("load", () => {
   const is = iron_ore.index - 1;
@@ -25,6 +26,17 @@ function CreateNode(value, node) {
   output.appendChild(itemNode);
 
   return;
+}
+
+function CreateInventoryItem(item, amount) {
+  // Temporary item addition
+  // This doesn't work with stacks
+  CreateNode(item, inventory);
+}
+
+function UpdateInventoryItem(item, amount) {
+  // This will update stack size
+  // Should only be called when an item exists already
 }
 
 // Server code here

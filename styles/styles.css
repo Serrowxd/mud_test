@@ -35,10 +35,13 @@ body {
 .console-wrapper {
   border: 1px solid black;
 
-  height: 100%;
   width: 50%;
 
   padding: 1rem;
+}
+
+.inventory-wrapper {
+  height: 50%;
 }
 
 .interaction-wrapper {
@@ -47,4 +50,15 @@ body {
 
 .console-wrapper {
   overflow: auto;
+}
+
+.inventory {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inventory p {
+  padding: 1rem;
+  margin: 0.25rem;
+  border: 1px solid black;
 }

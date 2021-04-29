@@ -14,16 +14,25 @@
     <div class="container">
       <div class="header">
         <p id="username"></p>
+        <!-- I don't have a home for Ore yet :( -->
         <p id="level"></p>
       </div>
 
       <div class="main-wrapper">
         <div class="interaction-wrapper">
-          <p>Actions</p>
-          <hr />
-          <button id="mine">
-            <p>Begin Mining</p>
-          </button>
+          <div class="inventory-wrapper">
+            <p>Inventory</p>
+            <hr />
+            <p id="ore"></p>
+            <div id="inventory" class="inventory"></div>
+          </div>
+          <div class="action-wrapper">
+            <p>Actions</p>
+            <hr />
+            <button id="mine">
+              <p>Begin Mining</p>
+            </button>
+          </div>
         </div>
 
         <div class="console-wrapper">
