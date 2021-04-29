@@ -61,3 +61,31 @@ function PlayerMine(user, item) {
     }
   }
 }
+
+function clearMineTick() {
+  clearInterval(MineTick);
+
+  console.log("Game Note: Mining finished");
+  CreateNode("You've finished mining.", cons);
+  // CreateNode(`Inventory: ${ReturnPlayerInventory(player)}`, cons);
+}
+
+function MineTickHandler() {
+  console.log("Game Note: Mining started");
+  CreateNode("You swing your pickaxe at the rock.", cons);
+  MineTick = setInterval(() => {
+    const ind = iron_ore.index - 1;
+
+    PlayerMine(player, iron_ore);
+
+    if (!player.inventory[ind]) {
+      return;
+    }
+
+    if (player.inventory[ind].count === 3) {
+      clearMineTick();
+    }
+  }, 1000);
+}
+
+// CreateNode(player.inventory, cons);

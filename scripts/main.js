@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
 });
 
 mine.addEventListener("click", () => {
-  startServer();
+  startServer(MineTickHandler);
 });
 
 function CreateNode(value, node) {
@@ -28,35 +28,12 @@ function CreateNode(value, node) {
 }
 
 // Server code here
-const startServer = function () {
-  // cons.textContent = player);
-  // cons.textContent = `Username: ${player.username}, Level: ${player.level}`;
-
-  GivePlayerItem(player, shovel);
-  GivePlayerItem(player, pickaxe);
-
-  function clear() {
-    clearInterval(MineTick);
-
-    CreateNode("You've finished mining.", cons);
-    // CreateNode(`Inventory: ${ReturnPlayerInventory(player)}`, cons);
+// Input is a function call, player is optional
+const startServer = function (input, player) {
+  if (input instanceof Function) {
+    input();
+  } else {
+    console.log("Action input was not a function, check the code dummy!");
+    return;
   }
-
-  const MineTick = setInterval(() => {
-    const ind = iron_ore.index - 1;
-    PlayerMine(player, iron_ore);
-
-    if (!player.inventory[ind]) {
-      return;
-    }
-
-    if (player.inventory[ind].count === 3) {
-      clear();
-    }
-  }, 1000);
-
-  // CreateNode(player.inventory, cons);
 };
-
-// const e = "none";
-// cons.textContent = startServer());
