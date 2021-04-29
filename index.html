@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-</head>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p id="username"></p>
+        <p id="level"></p>
+      </div>
 
-  <p id="username"></p>
-  <p id="level"></p>
-  <p id="ore"></p>
-  <button id="mine">
-    <p>Begin Mining</p>
-  </button>
+      <div class="main-wrapper">
+        <div class="interaction-wrapper">
+          <p>Actions</p>
+          <hr />
+          <button id="mine">
+            <p>Begin Mining</p>
+          </button>
+        </div>
 
-  <div id="console"></div>
+        <div class="console-wrapper">
+          <p>Console</p>
+          <hr />
+          <div id="console" class="console"></div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Jquery Slim Min -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Jquery Slim Min -->
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
-
-  <!-- Script Calls -->
-  <script src="./scripts/main.js"></script>
-  <script src="./scripts/player.js"></script>
-  <script src="./scripts/actions.js"></script>
-</body>
-
+    <!-- Script Calls -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/actions.js"></script>
+  </body>
 </html>

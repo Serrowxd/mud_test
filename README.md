@@ -2,11 +2,13 @@
 
 Literally just throwing ideas at the wall idk
 
-This runs locally in the command line
-
-`npm run bench`
-
 Currently working on adding an HTML GUI that will visualize the data.
+
+The bench still works for the initial command line version, `npm run bench` - this filters through `bench.js` which is deprecated and not touched, but kept for reference.
+
+All future adjustments will be done through `index.html` until further notice.
+
+We're doing this as a one-page game!
 
 ---
 
