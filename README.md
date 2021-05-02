@@ -23,3 +23,9 @@ The next few commits past this point will likely be UI based, I need to get some
 Data persistence is future dated, but I'm not intending for this to be anything long-term currently, so a back-end server isn't being considered until the logic is all in play - in which case I will move the front-end data manipulation into back-end so I can route the majority of the logic through the server.
 
 I didn't expect to make it this far with a test bench, but here we are!
+
+---
+
+**Bugs**
+
+Clicking "Begin Mining" more than once will cause it to start multiple instances of the mining process.

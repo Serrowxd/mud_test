@@ -32,6 +32,8 @@ function CreateInventoryItem(item, amount) {
   // Temporary item addition
   // This doesn't work with stacks
   CreateNode(item, inventory);
+
+  // Add item limit (inventory size) as a global variable that is passed in
 }
 
 function UpdateInventoryItem(item, amount) {
